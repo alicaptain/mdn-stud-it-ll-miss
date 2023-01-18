@@ -7,7 +7,6 @@ import Orbital from './Orbital';
 function getDate(d = new Date()) {
   return d.toJSON().split('T')[0];
 }
-
 <div>
 <h1>Let's Try a change</h1>
 </div>
