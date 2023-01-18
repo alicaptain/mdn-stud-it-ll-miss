@@ -36,6 +36,9 @@ export default function App() {
   }, 0);
 
   document.title = `${hazards} potential HAZARDS ${hazards > 0 ? '😱' : '👍'}`;
+  <div>
+    <h1>Let's Try a change</h1>
+  </div>
 
   const results = data.result.near_earth_objects[day];
   return (
