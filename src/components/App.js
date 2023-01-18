@@ -8,6 +8,11 @@ function getDate(d = new Date()) {
   return d.toJSON().split('T')[0];
 }
 
+<div>
+<h1>Let's Try a change</h1>
+</div>
+
+
 const fetchData = () =>
   fetch(
     `https://api.nasa.gov/neo/rest/v1/feed?start_date=${getDate()}&api_key=DEMO_KEY`
@@ -36,9 +41,6 @@ export default function App() {
   }, 0);
 
   document.title = `${hazards} potential HAZARDS ${hazards > 0 ? '😱' : '👍'}`;
-  <div>
-    <h1>Let's Try a change</h1>
-  </div>
 
   const results = data.result.near_earth_objects[day];
   return (
